@@ -38,7 +38,7 @@ body {
 	overflow: hidden;
 	margin: 0;
 	color: #cecece;
-	background: #2a2b30;
+	background: #ffffff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -211,7 +211,7 @@ a:hover {
 	padding: 1em 0 0 0;
 	text-align: center;
 	color: #3b3d4a;
-	background: #1c1d22;
+	background: #5b3469;
 }
 
 .dummy-icon {
@@ -261,6 +261,10 @@ a:hover {
 	padding: 20vh 1em 0;
 	text-align: center;
 	color: #47484c;
+}
+
+.logo {
+	height: 70px;
 }
 
 body #cdawrap {
