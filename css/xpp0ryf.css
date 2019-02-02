@@ -18,25 +18,25 @@
 
 @font-face {
 font-family:"canada-type-gibson";
-src:url("../l") format("woff2"),url("../d") format("woff"),url("../a_1") format("opentype");
+src:url("../l_1") format("woff2"),url("../d_3") format("woff"),url("../a_2") format("opentype");
 font-style:normal;font-weight:700;
 }
 
 @font-face {
 font-family:"canada-type-gibson";
-src:url("../l_1") format("woff2"),url("../d_2") format("woff"),url("../a") format("opentype");
+src:url("../l_2") format("woff2"),url("../d_2") format("woff"),url("../a_1") format("opentype");
 font-style:normal;font-weight:300;
 }
 
 @font-face {
 font-family:"canada-type-gibson";
-src:url("../l_2") format("woff2"),url("../d_1") format("woff"),url("../a_3") format("opentype");
+src:url("../l_3") format("woff2"),url("../d_1") format("woff"),url("../a") format("opentype");
 font-style:normal;font-weight:400;
 }
 
 @font-face {
 font-family:"canada-type-gibson";
-src:url("../l_3") format("woff2"),url("../d_3") format("woff"),url("../a_2") format("opentype");
+src:url("../l") format("woff2"),url("../d") format("woff"),url("../a_3") format("opentype");
 font-style:normal;font-weight:600;
 }
 

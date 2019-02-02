@@ -12,12 +12,12 @@
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Find your perfect smoothie Delicious, nutritious and blended right before your eyes. Our legendary lineup of smoothies combine the freshest ingredients to nourish the body and satisfy cravings.">
-<meta name="keywords" content="Smoothies - Menu - Booster Juice">
+<meta name="description" content="Try ourFAMILY PACK! Save on 2 Snack and 2 Regular Size Smoothies! Learn more">
+<meta name="keywords" content="Booster Juice">
 <meta name="robots" content="all">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Smoothies - Menu - Booster Juice</title>
+<title>Booster Juice</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
@@ -55,6 +55,7 @@
 
 <script src="js/global.js" type="text/javascript" charset="utf-8"></script>
 
+<script src="js/jquery.blockUI.min.js"></script>
 
 <script src="js/commonFrontEnd.js" type="text/javascript" charset="utf-8"></script>
 
@@ -68,7 +69,7 @@
 </script>
 </head>
 
-<body>
+<body class="nav-is-fixed">
 	
 
 
@@ -94,7 +95,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager (noscript) -->
 
 
-
 	<!-- Header -->
 	<nav class="navbar navbar-default navbar-expand-lg nav-down" role="navigation">
      <!-- data-toggle="collapse" data-target="#navbarSupportedContent"  -->
@@ -116,13 +116,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <ul id="ctl01_ItemsList_ul" class="level0 navbar-nav mr-auto">
             
         <li id="ctl01_ItemsList_li_0" class="index-0 MediaID-11176 nav-item has-children">
-            <a id="ctl01_ItemsList_Link_0" class="nav-link" href="https://www.boosterjuice.com/menu/smoothies/">Menu</a>
+            <a id="ctl01_ItemsList_Link_0" class="nav-link" href="menu-page/index.html">Menu</a>
             
                     <ul id="ctl01_ItemsList_ChildList_0_ul_0" class="level1 dropdown-menu">
                         
                         
         <li id="ctl01_ItemsList_ChildList_0_li_0" class="index-0 MediaID-11181 nav-item">
-            <a id="ctl01_ItemsList_ChildList_0_Link_0" class="nav-link" href="https://www.boosterjuice.com/menu/smoothies/">Smoothies</a>
+            <a id="ctl01_ItemsList_ChildList_0_Link_0" class="nav-link" href="menu-page/index.html">Smoothies</a>
             
         </li>
     
@@ -334,221 +334,125 @@ function hasScrolled() {
 
 
 </script>
-<main class="cd-main-content">
-    <!-- Render BreadCrumb -->
-    <nav aria-label="breadcrumb">
-                
-        <ul id="ctl03_ItemsList_ul" class="level0 breadcrumb">
-            
-        <li id="ctl03_ItemsList_li_0" class="index-0 currentParent MediaID-2 breadcrumb-item">
-            <a id="ctl03_ItemsList_Link_0" href="https://www.boosterjuice.com/">Booster Juice</a>
-            
-        </li>
-    
-        <li id="ctl03_ItemsList_li_1" class="index-1 MediaID-11176 breadcrumb-item">
-            <a id="ctl03_ItemsList_Link_1" href="https://www.boosterjuice.com/menu/smoothies/">Menu</a>
-            
-        </li>
-    
-        <li id="ctl03_ItemsList_li_2" class="index-2 MediaID-11181 breadcrumb-item">
-            <a id="ctl03_ItemsList_Link_2" href="https://www.boosterjuice.com/menu/smoothies/">Smoothies</a>
-            
-        </li>
-    
-        </ul>
-        
-        </nav>
-    
-    <!-- PageContent -->
-    <div id="PageContent" data-mediadetailid="31885" data-mediaid="11181">
 
-<div id="app" class="products__page" style="background-image: url('images/pineapple-coconut-background.jpg')">
-
-	<div class="products__header">
-		<div class="container">
-			<div class="products__header__content">
-				<div class="field" data-fieldid="38472" data-mediaid="" data-fieldcode="ShortDescription" data-arguments="{}"><h1>Find your perfect smoothie</h1>
-<p>Delicious, nutritious and blended right before your eyes. Our legendary lineup of smoothies combine the freshest ingredients to nourish the body and satisfy cravings.</p></div>
-			</div>
-			<div class="products__header__search">
-				<input type="text" v-model="searchText" v-on:keyup.enter="search" placeholder="ex: 'strawberries'"><button v-on:click="search" class="button button--purpledark">
-					Search
-				</button>
-			</div>
-		</div>
+    <main class="cd-main-content">
+        <!-- PageContent -->
+        <div id="PageContent" data-mediadetailid="35104" data-mediaid="2">
 
 
-	</div>
-	<div class="container">
-		<div class="products__grid">
-			<div v-if="hasSearched && products.length == 0">No Products Found</div>
-			<a class="product" :href="product.Link" v-for="product in products">
+<section class="banner__home center" style="background-image:linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ),url('images/1013-familypack_twitter-1500x500.jpg')">
+    <div class="banner__content">
+        <div class="banner__content__inner">
+            <div class="field" data-fieldid="65068" data-mediaid="" data-fieldcode="MainContent" data-arguments="{}"><h1>Try our<br>FAMILY PACK!</h1>
+<p class="deck">Save on 2 Snack and 2 Regular Size Smoothies!</p>
+<p><a href="/current-promotions/" class="button button--yellow">Learn more</a></p></div>
+        </div>
+    </div>            
+</section>
+<section class="card__container" style="background-image:url('images/homepage-background-2.jpg')">
+    <div class="card__content">
+						<div class="info__card card--purpledark">
+							<h2><div class="field" data-fieldid="65069" data-mediaid="" data-fieldcode="SectionTitle" data-arguments="{}">Booster Juice Day</div></h2>
+							<div class="field" data-fieldid="65070" data-mediaid="" data-fieldcode="MainContent" data-arguments="{}"><p class="sm-desc">At Booster Juice we are all about healthy eating and living an active lifestyle! Our school lunch menu is hand-crafted to ensure students get what they need most: a balanced, great-tasting meal, packed with vitamins and nutrients that helps kids stay full, so they can stay focused on the important stuff! All of our smoothies are nut-free*, low in fat and are a delicious blend of pure fruit and 100% juice.</p></div>
+							<a href="https://www.boosterjuice.com/programs/school-catering-program/" class="button button--card">Learn More</a>
+						</div>
+						<div class="info__card card--pink">
+							<h2><div class="field" data-fieldid="65074" data-mediaid="" data-fieldcode="SectionTitle" data-arguments="{}">Find a Location</div></h2>
+							<div class="field" data-fieldid="65075" data-mediaid="" data-fieldcode="MainContent" data-arguments="{}"><p class="sm-desc">Visit our store locator page to find a Booster Juice location near you.</p></div>
+							<a href="https://www.boosterjuice.com/find-a-location/" class="button button--card">Let&#39;s Go</a>
+						</div>
+						<div class="info__card card--purple">
+							<h2><div class="field" data-fieldid="65079" data-mediaid="" data-fieldcode="SectionTitle" data-arguments="{}">Smoothies Made Fresh</div></h2>
+							<div class="field" data-fieldid="65080" data-mediaid="" data-fieldcode="MainContent" data-arguments="{}"><p class="sm-desc">At Booster Juice, we pride ourselves on bringing original products to our customers so that they can feel good about eating well on the go. Find your perfect combo of smoothies, juice and specialty snacks today!</p></div>
+							<a href="https://www.boosterjuice.com/menu/smoothies/" class="button button--card">View All</a>
+						</div>
+
+
+        <!--<div class="info__card card--purpledark">
+            <h2>Booster Juice Day</h2>
+            <p class="sm-desc">At Booster Juice we are all about healthy eating and living an active lifestyle! Our school lunch menu is hand-crafted to ensure students get what they need most: a balanced, great-tasting meal, packed with vitamins and nutrients that helps kids stay full, so they can stay focused on the important stuff! All of our smoothies are nut-free*, low in fat and are a delicious blend of pure fruit and 100% juice.</p>
+            <a href="/programs/school-lunch-program/" class="button button--card">Learn more</a>
+        </div>
+        <div class="info__card card--pink">
+            <h2>Find a Location</h2>
+            <p class="sm-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="/find-a-location/" class="button button--card">Let's go</a>
+        </div>
+        <div class="info__card card--purple">
+            <h2>Boosternation Sign-Up</h2>
+            <p class="sm-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="/subscribe/" class="button button--card">Subscribe</a>
+        </div>-->
+    </div>
+</section>
+<section class="instagram__container">
+    <div class="instagram__content container">
+        <h4>Follow us on Instagram @<a href="https://www.instagram.com/boosterjuice/">boosterjuice</a></h4>
+		<div class="instagram__images">
+					<a href="https://www.instagram.com/p/Bqcg_3AAKS3/" target="_blank">
+						<div class="img-container">
+							<img src="images/instagram_1.jpg">
+						</div>
+					</a>
+					<a href="https://www.instagram.com/p/BqK99b_AiVv/" target="_blank">
+						<div class="img-container">
+							<img src="images/instagram_2.jpg">
+						</div>
+					</a>
+					<a href="https://www.instagram.com/p/BpHlmdaho3q/" target="_blank">
+						<div class="img-container">
+							<img src="images/instagram_3.jpg">
+						</div>
+					</a>
+					<a href="https://www.instagram.com/p/BoRdanVh1-X/" target="_blank">
+						<div class="img-container">
+							<img src="images/instagram_4.jpg">
+						</div>
+					</a>
+					<a href="https://www.instagram.com/p/BnwtUqWHu4k/" target="_blank">
+						<div class="img-container">
+							<img src="images/instagram_5.jpg">
+						</div>
+					</a>
+					<a href="https://www.instagram.com/p/BnjRsNzhg6d/" target="_blank">
+						<div class="img-container">
+							<img src="images/instagram_6.jpg">
+						</div>
+					</a>
+
+			<!--<a href="https://www.instagram.com/p/BqH22pHA0gf/">
 				<div class="img-container">
-					<img :src="product.ImageUrl" :alt="product.Name">
-				</div>
-				<div class="product__content">
-					<h5>{{product.Name}}</h5>
-					<p class="sm-desc">{{product.Description}}</p>
+					<img src="/media/uploads/images/placeholders/instagram_1.jpg">
 				</div>
 			</a>
-			<div class="product">
+			<a href="https://www.instagram.com/p/BqH22pHA0gf/">
 				<div class="img-container">
-					<a href="#"><img src="images/smoothies/smoothie-BananasAWhey.png" alt="" /></a>
+					<img src="/media/uploads/images/placeholders/instagram_1.jpg">
 				</div>
-				<h5>Bananas-A-Whey</h5>
-				<p class="sm-desc">Bananas, mangoes, passion fruit, guava, whey protein.</p>
-			</div>
-			<div class="product">
+			</a>
+			<a href="https://www.instagram.com/p/Bp1-eH_ANMC/">
 				<div class="img-container">
-					<img src="images/smoothies/smoothie-BanangoBurst.png" alt="" />
+					<img src="/media/uploads/images/placeholders/instagram_2.jpg">
 				</div>
-				<h5>Banango Burst</h5>
-				<p class="sm-desc">Bananas, pineapple, skim milk, vanilla frozen yogurt, whey protein.</p>
-			</div>
-			<div class="product">
+			</a>
+			<a href="https://www.instagram.com/p/BppLVIDgefI/">
 				<div class="img-container">
-					<img src="images/smoothies/smoothie-BerryCreamSensation.png" alt="" />
+					<img src="/media/uploads/images/placeholders/instagram_3.jpg">
 				</div>
-				<h5>Berry Cream Sensation</h5>
-				<p class="sm-desc">Blueberries, strawberries, guava, passion fruit, vanilla frozen yogurt.</p>
-			</div>
-			<div class="product">
+			</a>
+			<a href="https://www.instagram.com/p/BpmUlPWAO3j/">
 				<div class="img-container">
-					<img src="images/smoothies/smoothie-BrazilianThunder.png" alt="" />
+					<img src="/media/uploads/images/placeholders/instagram_4.jpg">
 				</div>
-				<h5>Brazilian Thunder</h5>
-				<p class="sm-desc">Acai, raspberries, bananas, strawberries, yogurt.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-BreezyBanana.png" alt="" />
-				</div>
-				<h5>Breezy Banana</h5>
-				<p class="sm-desc">Bananas, mangos, passion fruit, guava, peach.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-CanadianColada.png" alt="" />
-				</div>
-				<h5>Canadian Colada</h5>
-				<p class="sm-desc">Pineapples, bananas, vanilla frozen yogurt, coconut.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-CocoCrush.png" alt="" />
-				</div>
-				<h5>Coco Crush</h5>
-				<p class="sm-desc">Coconut water, pineapples, bananas, coconut.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-FunkyMonkey.png" alt="" />
-				</div>
-				<h5>Funky Monkey</h5>
-				<p class="sm-desc">Bananas, chocolate almond milk, vanilla frozen yogurt.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-HighImpactAcai.png" alt="" />
-				</div>
-				<h5>High-Impact Acai</h5>
-				<p class="sm-desc">Acai, raspberries, cranberry, skim milk, vanilla frozen yogurt, whey protein.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-MangoHurricane.png" alt="" />
-				</div>
-				<h5>Mango Hurricane</h5>
-				<p class="sm-desc">Mangoes, strawberries, guava, passion fruit, peach, yogurt.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-Marathon.png" alt="" />
-				</div>
-				<h5>Marathon</h5>
-				<p class="sm-desc">Strawberries, bananas, cranberry, orange, yogurt, soy protein powder.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="images/smoothies/smoothie-MatchaMonsoon.png" alt="" />
-				</div>
-				<h5>Matcha Monsoon</h5>
-				<p class="sm-desc">Pure matcha green tea, vanilla almond milk, vanilla frozen yogurt.</p>
-			</div>
-			<!--
-			<div class="product">
-				<div class="img-container">
-					<img src="\media\uploads\images\placeholders\food-placeholder.png" alt="" />
-				</div>
-				<h5>Bananas-A-Whey</h5>
-				<p class="sm-desc">Mangoes, strawberry, guava, passion fruit, peach, yogurt.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="\media\uploads\images\placeholders\food-placeholder.png" alt="" />
-				</div>
-				<h5>Banango Burst</h5>
-				<p class="sm-desc">Bananas, mangoes, passion fruit, guava, whey protein.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="\media\uploads\images\placeholders\food-placeholder.png" alt="" />
-				</div>
-				<h5>Spinach Is In It</h5>
-				<p class="sm-desc">Spinach, parsley, mangoes, acai.</p>
-			</div>
-			<div class="product">
-				<div class="img-container">
-					<img src="\media\uploads\images\placeholders\food-placeholder.png" alt="" />
-				</div>
-				<h5>Heavenly Horizon</h5>
-				<p class="sm-desc">Apples, lemons, ginger, pineapples.</p>
-			</div> 
-		-->
+			</a>-->
 		</div>
-		<div class="calorie__disclaimer">
-			<div class="field" data-fieldid="61893" data-mediaid="" data-fieldcode="CalorieDisclaimer" data-arguments="{}"><p>* Some calorie values on the website may differ when compared to our in-store menus due to unique labeling requirements in each province. If you have any questions about the calories in your favourite smoothie, please email <a href="mailto:nutrition@boosterjuice.com" class="link--pink">nutrition@boosterjuice.com</a>.</p></div>
-		</div>
-	</div>
+        <a href="https://www.instagram.com/boosterjuice/" class="see--more">more instagram</a>
+    </div>
+</section>
 </div>
 
-<script>
-	var app = new Vue({
-		el: "#app",
-		data: {
-			allergens: [],
-			searchText: "",
-			products: [],
-			hasSearched: false
-		},
-		methods: {
-			search: function() {
-
-				$('.products__grid').block({
-					message: '<div class="spinner"></div>',
-					css: {
-						border: 'none',
-						background: 'none'
-					}
-				});
-
-				$.post("/WebServices/Esha.asmx/Search", { searchText: this.searchText, parentMediaId: 11181, allergensCsv: this.allergens.join(","), languageId: 5
-			}, function(data) {
-				app.products = data.Item;
-				app.hasSearched = true;
-
-				$('.products__grid').unblock();
-			});
-			}
-		}
-	});
-
-	app.search();
-</script>
-</div>
-
-    <!-- Footer -->
-    <footer>
+        <!-- Footer -->
+        <footer>
 	<div class="footer__nav">
 		<!--<ul class="footer__nav__content">
 		<li>
@@ -578,36 +482,36 @@ function hasScrolled() {
 		</li>
 	</ul>-->
 		            
-        <ul id="ctl04_ItemsList_ul" class="level0 footer__nav__content">
+        <ul id="ctl03_ItemsList_ul" class="level0 footer__nav__content">
             
-        <li id="ctl04_ItemsList_li_0" class="index-0 MediaID-11176 has-children">
-            <a id="ctl04_ItemsList_Link_0" class="nav__heading" href="https://www.boosterjuice.com/menu/smoothies/">Menu</a>
+        <li id="ctl03_ItemsList_li_0" class="index-0 MediaID-11176 has-children">
+            <a id="ctl03_ItemsList_Link_0" class="nav__heading" href="menu-page/index.html">Menu</a>
             
-                    <ul id="ctl04_ItemsList_ChildList_0_ul_0" class="level1 footer__subnav">
+                    <ul id="ctl03_ItemsList_ChildList_0_ul_0" class="level1 footer__subnav">
                         
                         
-        <li id="ctl04_ItemsList_ChildList_0_li_0" class="index-0 MediaID-11181">
-            <a id="ctl04_ItemsList_ChildList_0_Link_0" href="https://www.boosterjuice.com/menu/smoothies/">Smoothies</a>
+        <li id="ctl03_ItemsList_ChildList_0_li_0" class="index-0 MediaID-11181">
+            <a id="ctl03_ItemsList_ChildList_0_Link_0" href="menu-page/index.html">Smoothies</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_ChildList_0_li_1" class="index-1 MediaID-11182">
-            <a id="ctl04_ItemsList_ChildList_0_Link_1" href="https://www.boosterjuice.com/menu/juices/">Juices</a>
+        <li id="ctl03_ItemsList_ChildList_0_li_1" class="index-1 MediaID-11182">
+            <a id="ctl03_ItemsList_ChildList_0_Link_1" href="https://www.boosterjuice.com/menu/juices/">Juices</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_ChildList_0_li_2" class="index-2 MediaID-11184">
-            <a id="ctl04_ItemsList_ChildList_0_Link_2" href="https://www.boosterjuice.com/menu/eats/">Eats</a>
+        <li id="ctl03_ItemsList_ChildList_0_li_2" class="index-2 MediaID-11184">
+            <a id="ctl03_ItemsList_ChildList_0_Link_2" href="https://www.boosterjuice.com/menu/eats/">Eats</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_ChildList_0_li_3" class="index-3 MediaID-11183">
-            <a id="ctl04_ItemsList_ChildList_0_Link_3" href="https://www.boosterjuice.com/menu/specialty-shots/">Specialty Shots</a>
+        <li id="ctl03_ItemsList_ChildList_0_li_3" class="index-3 MediaID-11183">
+            <a id="ctl03_ItemsList_ChildList_0_Link_3" href="https://www.boosterjuice.com/menu/specialty-shots/">Specialty Shots</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_ChildList_0_li_4" class="index-4 MediaID-12747">
-            <a id="ctl04_ItemsList_ChildList_0_Link_4" href="https://www.boosterjuice.com/menu/allergen/">Allergen</a>
+        <li id="ctl03_ItemsList_ChildList_0_li_4" class="index-4 MediaID-12747">
+            <a id="ctl03_ItemsList_ChildList_0_Link_4" href="https://www.boosterjuice.com/menu/allergen/">Allergen</a>
             
         </li>
     
@@ -615,19 +519,19 @@ function hasScrolled() {
                 
         </li>
     
-        <li id="ctl04_ItemsList_li_1" class="index-1 MediaID-12438 has-children">
-            <a id="ctl04_ItemsList_Link_1" class="nav__heading" href="https://www.boosterjuice.com/our-story/about-booster-juice/">Our Story</a>
+        <li id="ctl03_ItemsList_li_1" class="index-1 MediaID-12438 has-children">
+            <a id="ctl03_ItemsList_Link_1" class="nav__heading" href="https://www.boosterjuice.com/our-story/about-booster-juice/">Our Story</a>
             
-                    <ul id="ctl04_ItemsList_ChildList_1_ul_1" class="level1 footer__subnav">
+                    <ul id="ctl03_ItemsList_ChildList_1_ul_1" class="level1 footer__subnav">
                         
                         
-        <li id="ctl04_ItemsList_ChildList_1_li_0" class="index-0 MediaID-11177">
-            <a id="ctl04_ItemsList_ChildList_1_Link_0" href="https://www.boosterjuice.com/our-story/about-booster-juice/">About Booster Juice</a>
+        <li id="ctl03_ItemsList_ChildList_1_li_0" class="index-0 MediaID-11177">
+            <a id="ctl03_ItemsList_ChildList_1_Link_0" href="https://www.boosterjuice.com/our-story/about-booster-juice/">About Booster Juice</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_ChildList_1_li_1" class="index-1 MediaID-12439">
-            <a id="ctl04_ItemsList_ChildList_1_Link_1" href="https://www.boosterjuice.com/our-story/community-partnerships/">Community Partnerships</a>
+        <li id="ctl03_ItemsList_ChildList_1_li_1" class="index-1 MediaID-12439">
+            <a id="ctl03_ItemsList_ChildList_1_Link_1" href="https://www.boosterjuice.com/our-story/community-partnerships/">Community Partnerships</a>
             
         </li>
     
@@ -635,19 +539,19 @@ function hasScrolled() {
                 
         </li>
     
-        <li id="ctl04_ItemsList_li_2" class="index-2 MediaID-11178 has-children">
-            <a id="ctl04_ItemsList_Link_2" class="nav__heading" href="https://www.boosterjuice.com/programs/school-catering-program/">Programs</a>
+        <li id="ctl03_ItemsList_li_2" class="index-2 MediaID-11178 has-children">
+            <a id="ctl03_ItemsList_Link_2" class="nav__heading" href="https://www.boosterjuice.com/programs/school-catering-program/">Programs</a>
             
-                    <ul id="ctl04_ItemsList_ChildList_2_ul_2" class="level1 footer__subnav">
+                    <ul id="ctl03_ItemsList_ChildList_2_ul_2" class="level1 footer__subnav">
                         
                         
-        <li id="ctl04_ItemsList_ChildList_2_li_0" class="index-0 MediaID-11230">
-            <a id="ctl04_ItemsList_ChildList_2_Link_0" href="https://www.boosterjuice.com/programs/school-catering-program/">School Catering Program</a>
+        <li id="ctl03_ItemsList_ChildList_2_li_0" class="index-0 MediaID-11230">
+            <a id="ctl03_ItemsList_ChildList_2_Link_0" href="https://www.boosterjuice.com/programs/school-catering-program/">School Catering Program</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_ChildList_2_li_1" class="index-1 MediaID-11231">
-            <a id="ctl04_ItemsList_ChildList_2_Link_1" href="https://www.boosterjuice.com/programs/fundraising/">Fundraising</a>
+        <li id="ctl03_ItemsList_ChildList_2_li_1" class="index-1 MediaID-11231">
+            <a id="ctl03_ItemsList_ChildList_2_Link_1" href="https://www.boosterjuice.com/programs/fundraising/">Fundraising</a>
             
         </li>
     
@@ -655,13 +559,13 @@ function hasScrolled() {
                 
         </li>
     
-        <li id="ctl04_ItemsList_li_3" class="index-3 MediaID-11179">
-            <a id="ctl04_ItemsList_Link_3" class="nav__heading" href="https://www.boosterjuice.com/gift-cards/">Gift Cards</a>
+        <li id="ctl03_ItemsList_li_3" class="index-3 MediaID-11179">
+            <a id="ctl03_ItemsList_Link_3" class="nav__heading" href="https://www.boosterjuice.com/gift-cards/">Gift Cards</a>
             
         </li>
     
-        <li id="ctl04_ItemsList_li_4" class="index-4 MediaID-11180">
-            <a id="ctl04_ItemsList_Link_4" class="nav__heading" href="https://www.boosterjuice.com/franchise-opportunities/">Franchise Opportunities</a>
+        <li id="ctl03_ItemsList_li_4" class="index-4 MediaID-11180">
+            <a id="ctl03_ItemsList_Link_4" class="nav__heading" href="https://www.boosterjuice.com/franchise-opportunities/">Franchise Opportunities</a>
             
         </li>
     
@@ -723,8 +627,11 @@ $(document).ready(function(){
 		</div>
     </div>
 </footer>
+
     </main>
+
 	
 </body>
 
-</html> <!-- Loaded from level 2 - File Cache -->
+</html>
+ <!-- Loaded from level 2 - File Cache -->
