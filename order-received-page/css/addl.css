@@ -2,10 +2,10 @@
     position: absolute;
     top: 150px;
     right: 0%;
-    
+
     background-color: white;
     padding: 1%;
-    padding-bottom: 2%;  
+    padding-bottom: 2%;
     margin-right: 100px;
 
 }
@@ -21,7 +21,7 @@
 }
 
 .thank-you {
-    position: absolute;
-    top: 400px; 
-    left: 315px
+    position: relative;
+    top: 300px;
+
 }

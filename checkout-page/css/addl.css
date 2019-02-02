@@ -1,12 +1,12 @@
 .checkout-box {
-    position: absolute;
+    position: relative;
     top: 150px;
     right: 0%;
-    
+
     background-color: white;
     padding: 1%;
-    padding-bottom: 2%;  
-    margin-right: 100px;
+    padding-bottom: 2%;
+    margin-right: auto;
 
 }
 
