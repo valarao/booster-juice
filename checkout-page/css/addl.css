@@ -1,0 +1,17 @@
+.checkout-box {
+    position: absolute;
+    top: 150px;
+    right: 0%;
+    
+    background-color: white;
+    padding: 1%; 
+}
+
+.meep {
+    padding-bottom: 800px;
+    background-color: rgb(250, 250, 250);
+}
+
+.form-item {
+    padding-top: 20px;
+}
