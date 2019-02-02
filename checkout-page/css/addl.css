@@ -10,12 +10,30 @@
 
 }
 
+.checkout-box h2 {
+    text-align: center;
+}
+
+.checkout-box .checkout-title {
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+.checkout-box .form-item {
+    text-align: center;
+    
+}
+
 .meep {
-    padding-bottom: 1000px;
+    padding-bottom: 200px;
     padding-left: 20px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
 }
 
 .form-item {
     padding-top: 20px;
 }
+
